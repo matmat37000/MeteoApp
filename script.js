@@ -325,7 +325,7 @@ function loopWithTimer() {
     // Call the function to get the current location and fetch weather data
     getCurrentLocation();
     // Set the timer for the next iteration
-    setTimeout(loopWithTimer, 120000); // 120000 milliseconds = 2 minutes
+    setTimeout(loopWithTimer, 600000); // 120000 milliseconds = 2 minutes
 }
   
 // Start the loop
