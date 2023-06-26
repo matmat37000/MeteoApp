@@ -307,8 +307,20 @@ function getEndOfString(text, length) {
 }
 
 function loopWithTimer() {
+    // Create a new Date object
+    const currentTime = new Date();
+
+    // Get the current time components
+    const hours = currentTime.getHours();         // 0-23
+    const minutes = currentTime.getMinutes();     // 0-59
+    const seconds = currentTime.getSeconds();     // 0-59
+
+    // Format the time as a string
+    const formattedTime = `${hours}:${minutes}:${seconds}`;
+
+
     // Code to be executed in each iteration
-    console.log("Loop iteration");
+    console.log(`Loop iteration: ${formattedTime}`);
   
     // Call the function to get the current location and fetch weather data
     getCurrentLocation();
